@@ -12,13 +12,20 @@
   <body>
     <h2>View Your Report Card</h2>
 
-    <form action="view.jsp" method="get">
+    <form action="vuln-view" method="get">
       <label for="id">Enter Student ID:</label>
-      <input type="text" id="id" name="id" placeholder="e.g. 1001" required>
-      <input type="submit" value="View Report">
+      <input type="text" id="id" name="id" placeholder="e.g. 22BCON1552" required>
+      <input type="submit" value="View Report (Vulnerable)">
     </form>
 
-    <p>Example valid ID: <code>1001</code></p>
+    <br>
+
+    <form action="secure-view" method="get">
+      <label for="id">Enter Student ID:</label>
+      <input type="text" id="id" name="id" placeholder="e.g. 22BCON1552" required>
+      <input type="submit" value="View Report (Secure)">
+    </form>
+
+    <p>Try: <code>22BCON1552</code> (valid file in /reports)</p>
   </body>
 </html>
-
